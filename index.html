@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Semangat, Sayang!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #ffe6f0, #d9e4ff);
+            font-family: 'Georgia', serif;
+            color: #4a2c40;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            padding-top: 30px;
+        }
+        .image-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+            object-fit: cover;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            display: block;
+        }
+        .heart-frame {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            width: 220px;
+            height: 220px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M50 88c-10-8-20-18-28-28C14 50 10 40 10 30c0-10 4-18 12-22 8-4 18-2 24 2 6-4 16-6 24-2 8 4 12 12 12 22 0 10-4 20-12 30-8 10-18 20-28 28z" fill="none" stroke="%23ff6f91" stroke-width="2"/></svg>') no-repeat center;
+            background-size: contain;
+            pointer-events: none;
+        }
+        .text-container {
+            margin: 20px 20px 0;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 15px 0;
+            color: #4a2c40;
+        }
+        .highlight {
+            font-size: 1.3em;
+            font-weight: bold;
+            color: #ff6f91;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(15px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        audio {
+            display: none;
+        }
+        @media (max-width: 600px) {
+            .image-container, img {
+                width: 180px;
+                height: 180px;
+            }
+            .heart-frame {
+                width: 200px;
+                height: 200px;
+                top: -10px;
+                left: -10px;
+            }
+            p {
+                font-size: 1em;
+            }
+            .highlight {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="p.jpg" alt="Romantic Image">
+        <div class="heart-frame"></div>
+    </div>
+    <div class="text-container">
+        <p class="highlight">Semangatt ya, sayangku...</p>
+        <p>Aku tahu kamu itu luar biasa hebat. Buktinya? Kamu bisa sampai sejauh ini. Aku bangga banget sama kamu.</p>
+        <p>Mungkin sekarang kamu lagi lelah, lagi banyak pikiran, atau lagi menghadapi masalah yang datang terus-menerus. Tapi kamu tetap kuat. Kamu tetap berjuang.</p>
+        <p>Jangan kecewa sama dirimu sendiri ya, cantik. Kamu udah ngelakuin yang terbaik, dan itu lebih dari cukup. Kalau capek, istirahatlah sebentar... aku di sini, selalu ada buat nemenin kamu.</p>
+        <p>Ingat, sayang... bertahan sampai titik ini aja udah bukti betapa luar biasanya kamu. Jangan ragu untuk sayangin dirimu sendiri juga, karena kamu pantas untuk dicintai—terutama oleh dirimu sendiri.</p>
+        <p>Aku bangga banget sama setiap langkah yang kamu ambil. Karena setiap proses yang kamu jalani, sedang membentuk kamu jadi versi terbaik dari dirimu. Dan aku bersyukur bisa menyaksikan semua itu di sisimu.</p>
+    </div>
+    <audio autoplay loop>
+        <source src="m.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
